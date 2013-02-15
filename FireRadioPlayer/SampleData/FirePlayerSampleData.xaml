@@ -1,0 +1,61 @@
+﻿<local:MainViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FireRadioPlayer.ViewModel"
+    xmlns:FireRadioPlayer_Model="clr-namespace:FireRadioPlayer.Model"
+    >
+
+    <local:MainViewModel.RecentlyPlayed>
+        <FireRadioPlayer_Model:Track ArtistSlug="cece-peniston" 
+                                            Artist="Cece Peniston" 
+                                            CDUrl="" 
+                                            DownloadUrl="" 
+                                            Image="http://a1.mzstatic.com/us/r2000/005/Music/18/8a/22/mzi.vnomisnq.225x225-75.jpg" 
+                                            Time="14:53" 
+                                            TrackID="148478" 
+                                            Title="Finally I have a really long title"
+                                            BigImage="http://a1.mzstatic.com/us/r2000/005/Music/18/8a/22/mzi.vnomisnq.225x225-75.jpg"/>
+        <FireRadioPlayer_Model:Track ArtistSlug="the-wanted" 
+                                            Artist="The Wanted" 
+                                            CDUrl="" 
+                                            DownloadUrl="" 
+                                            Image="http://a3.mzstatic.com/us/r2000/003/Features/df/cd/9b/dj.ytiavkrf.225x225-75.jpg" 
+                                            Time="14:49" 
+                                            TrackID="162396" 
+                                            Title="Lightning"/>
+        <FireRadioPlayer_Model:Track ArtistSlug="one-direction" 
+                                            Artist="One Direction" 
+                                            CDUrl="" 
+                                            DownloadUrl="" 
+                                            Image="http://a3.mzstatic.com/us/r1000/078/Music/38/c9/fe/mzi.fqhrvkfe.225x225-75.jpg" 
+                                            Time="14:46"
+                                            TrackID="166804" 
+                                            Title="One Thing"/>
+    </local:MainViewModel.RecentlyPlayed>
+    <local:MainViewModel.OnAirNow>
+        <FireRadioPlayer_Model:OnAirNow Caption="" 
+                                        EmailUrl="http://www.fireradio.co.uk" 
+                                        Email="niall@fireradio.co.uk" 
+                                        ImageOnAir="http://35.mm.g-media.com/650943.jpg" 
+                                        ImagePlayer="http://35.mm.g-media.com/650943.jpg" 
+                                        Name="Niall Moloney" 
+                                        PageUrl="http://www.fireradio.co.uk/on-air/niall-moloney/" 
+                                        StaffID="759838" 
+                                        Times="Noon - 4:00PM"/>
+    </local:MainViewModel.OnAirNow>
+    <local:MainViewModel.OnAirNext>
+        <FireRadioPlayer_Model:OnAirNext Caption="House, Electro, Dubstep and DnB - The natiest, filthiest basslines for your Saturday night!" 
+                                         EmailUrl="http://fireradio.co.uk" 
+                                         Email="" 
+                                         ImageOnAir="/common/pixel.gif"
+                                         ImagePlayer="/common/pixel.gif" 
+                                         Name="Non Stop Fire on Fire Rad" 
+                                         PageUrl="http://www.fireradio.co.uk/on-air/non-stop-fire/" 
+                                         StaffID="766301" 
+                                         Times="4:00PM - 8:00PM"/>
+    </local:MainViewModel.OnAirNext>
+    
+    <local:MainViewModel.PlayButtonIconUri>
+        /Icons/appbar.transport.play.rest.png
+    </local:MainViewModel.PlayButtonIconUri>
+</local:MainViewModel>

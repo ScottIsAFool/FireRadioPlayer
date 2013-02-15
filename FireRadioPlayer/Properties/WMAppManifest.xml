@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{ac5b5d62-573c-4134-b290-0ad4f678ad7f}" 
+       Title="Fire Radio Player" 
+       RuntimeType="Silverlight" 
+       Version="1.0.0.0" 
+       Genre="apps.normal" 
+       Author="ScottIsAFool" 
+       Description="Windows Phone 7 app for Bournemouth's Fire Radio, 107.6 FM" 
+       Publisher="ScottLovegrove" BitsPerPixel="32">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />      
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_MEDIALIB"/>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Views/MainPage.xaml" />
+      <ExtendedTask Name="BackgroundTask">
+        <BackgroundServiceAgent Specifier="AudioPlayerAgent" Name="FireRadioAgent" Source="FireRadioAgent" Type="FireRadioAgent.AudioPlayer" />
+      </ExtendedTask>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="FireRadioPlayerToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>Fire Radio Player</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
